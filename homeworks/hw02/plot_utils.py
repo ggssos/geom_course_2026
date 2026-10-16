@@ -1,5 +1,3 @@
-from pathlib import Path
-
 import matplotlib.pyplot as plt
 
 def plot_pressure_over_time(table, output_dir):
@@ -10,7 +8,7 @@ def plot_pressure_over_time(table, output_dir):
         table["time_h"],
         table["boundary_pressure_mpa"],
         marker="o",
-        color="#C2185B",
+        color="#556B2F",
         label="Давление на границе"
     )
 
@@ -18,7 +16,7 @@ def plot_pressure_over_time(table, output_dir):
         table["time_h"],
         table["well_pressure_mpa"],
         marker="o",
-        color="#E6A0B5",
+        color="#C7158C",
         label="Давление в скважине"
     )
 
