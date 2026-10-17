@@ -93,6 +93,7 @@ ax_b.set_ylabel("Давление, МПа")
 colorbar = fig.colorbar(scatter, ax=ax_b)
 colorbar.set_label("Давление, МПа")
 
+
 ax_c.bar(
     well_id.astype(str),
     observation_drop_mpa,
@@ -103,6 +104,7 @@ ax_c.set_xlabel("Скважина")
 ax_c.set_ylabel("Падение давления, МПа")
 
 pressure_labels = ["На границе", "В скважине"]
+
 
 ax_d.boxplot(
     [boundary_pressure_mpa, well_pressure_mpa],
