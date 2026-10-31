@@ -116,6 +116,12 @@ axes[1].set_ylabel("Расстояние, м")
 axes[1].set_title("B — Заливка и изолинии")
 fig.colorbar(filled, ax=axes[1], label="Давление, МПа")
 
+axes[0].set_xlim(time_h.min(), time_h.max())
+axes[1].set_xlim(time_h.min(), time_h.max())
+
+axes[0].set_ylim(radius_m.min(), radius_m.max())
+axes[1].set_ylim(radius_m.min(), radius_m.max())
+
 fig.tight_layout()
 fig.savefig(figures_path / "pressure_maps.png", dpi=200)
 fig.savefig(figures_path / "pressure_maps.svg")
